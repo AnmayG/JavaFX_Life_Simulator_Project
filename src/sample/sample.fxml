@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="675.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Button fx:id="start" layoutX="550.0" layoutY="30.0" onAction="#handleStart" text="Start Simulation" />
+    <GridPane fx:id="gPane" layoutX="44.0" layoutY="30.0" visible="false" />
+    <Button fx:id="b1" layoutX="1044.0" layoutY="30.0" mnemonicParsing="false" onAction="#addNode" prefHeight="25.0" prefWidth="101.0" text="Add Villager" visible="false" />
+    <Button layoutX="930.0" layoutY="66.0" mnemonicParsing="false" onAction="#b2Click" prefHeight="25.0" prefWidth="101.0" text="Speed Up" visible="false" />
+    <Slider fx:id="slider1" blockIncrement="0.5" disable="true" layoutX="930.0" layoutY="91.0" max="1.5" min="0.5" prefHeight="14.0" prefWidth="101.0" showTickLabels="true" showTickMarks="true" value="1.0" visible="false" />
+    <ListView fx:id="list1" layoutX="864.0" layoutY="161.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+    <ListView fx:id="list2" layoutX="1198.0" layoutY="161.0" prefHeight="200.0" prefWidth="110.0" visible="false" />
+   <ListView fx:id="list3" layoutX="1076.0" layoutY="161.0" prefHeight="200.0" prefWidth="110.0" visible="false" />
+    <Button fx:id="b3" layoutX="1198.0" layoutY="369.0" mnemonicParsing="false" onAction="#b3Click" prefHeight="25.0" prefWidth="110.0" text="Add Item" visible="false" />
+    <ToggleButton fx:id="tb1" layoutX="1044.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Reset Targets" visible="false" />
+    <Label fx:id="l1" alignment="TOP_LEFT" layoutX="864.0" layoutY="375.0" prefHeight="59.0" prefWidth="200.0" text="Time:" visible="false" wrapText="true" />
+    <Pane layoutX="866.0" layoutY="434.0" prefHeight="134.0" prefWidth="200.0" visible="false">
+        <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="93.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+        <Circle fx:id="circle1" fill="GOLD" layoutX="18.0" layoutY="76.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4fbc19" height="47.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+    </Pane>
+   <ListView fx:id="list4" layoutX="44.0" layoutY="550.0" prefHeight="100.0" prefWidth="750.0" visible="false" />
+   <Button layoutX="1076.0" layoutY="369.0" mnemonicParsing="false" onAction="#b4Click" prefHeight="25.0" prefWidth="110.0" text="Use Powerup" visible="false" />
+   <LineChart fx:id="line1" layoutX="1080.0" layoutY="426.0" prefHeight="166.0" prefWidth="230.0" visible="false">
+     <xAxis>
+       <NumberAxis side="BOTTOM" fx:id="xAxis" />
+     </xAxis>
+     <yAxis>
+       <NumberAxis fx:id="yAxis" side="LEFT" />
+     </yAxis>
+   </LineChart>
+   <Button fx:id="b2" layoutX="1153.0" layoutY="30.0" mnemonicParsing="false" onAction="#animalNode" prefHeight="25.0" prefWidth="101.0" text="Add Animal" visible="false" />
+   <Button fx:id="b5" layoutX="1153.0" layoutY="66.0" mnemonicParsing="false" onAction="#monsterNode" prefHeight="25.0" prefWidth="101.0" text="Add Monster" visible="false" />
+   <ToggleButton fx:id="tb2" layoutX="864.0" layoutY="43.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Pause" visible="false" />
+</AnchorPane>
